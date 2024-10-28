@@ -3,6 +3,7 @@ import mysql.connector
 import joblib
 import datetime
 import os
+import numpy as np  # Import numpy
 
 app = Flask(__name__)
 
@@ -49,4 +50,3 @@ def predict():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8005)
-
